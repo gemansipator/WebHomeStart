@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    /* box-sizing: border-box*/
+}
+html, body{
+    font-size: 18px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #f1f1f1;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+button{
+    background: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: .9rem;
+}
+button:active{
+    background: #000;
+    color: #fff;
+}
+.slider{
+    width: 256px;
+    height: 256px;
+    border: 2px solid black;
+    margin: 30px auto;
+
+    /*Ограничим за пределами слайдера*/
+    overflow: hidden;
+}
+.slider-line{
+    height: 256px;
+    width: 1024px;
+    background: orangered;
+    display: flex;
+    position: relative;
+
+    /* обеспечим плавность слайдера: */
+    left: 0;  /*начальная позиция*/
+    transition: all ease 1s;  /*параметры*/
+}
+.image{
+height: 256px;
+width: 256px;
+}
